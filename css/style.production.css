@@ -1,0 +1,495 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+Content:
+1. Colors
+2. General Styles
+3. Header and Footer
+4. Main Section
+5. Animations
+6. Media Queries
+
+=========
+1. Colors
+=========
+*/
+
+/*
+=================
+2. General Styles
+=================
+ */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f4e1;
+  color: #272f40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+a {
+  display: inline-block;
+}
+
+a:link {
+  color: inherit;
+  padding-bottom: 5px;
+}
+
+a:visited {
+  color: inherit;
+  padding-bottom: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #e9896a;
+  font-size: 120%;
+  padding-bottom: 0;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #e9896a;
+  font-size: 120%;
+  padding-bottom: 0;
+}
+
+a:active {
+  text-decoration: none;
+  color: #e9896a;
+  background-color: #fff;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #e9896a;
+  color: #272f40;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 3px;
+  border-bottom: 2px solid #343f56;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #e9896a;
+  color: #272f40;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 3px;
+  border-bottom: 2px solid #343f56;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #272f40;
+  opacity: 0.8;
+}
+
+button:focus {
+  cursor: pointer;
+  color: #272f40;
+  opacity: 0.8;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #272f40;
+  opacity: 0.8;
+}
+
+.button:focus {
+  cursor: pointer;
+  color: #272f40;
+  opacity: 0.8;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+}
+
+input {
+  font-family: inherit;
+  border: solid 1px #343f56;
+  border-radius: 3px;
+}
+
+textarea {
+  font-family: inherit;
+  border: solid 1px #343f56;
+  border-radius: 3px;
+  min-height: 10em;
+}
+
+/*
+====================
+3. Header and Footer
+====================
+*/
+header {
+  background-color: #343f56;
+  color: #AAABB8;
+}
+footer {
+  background-color: #343f56;
+  color: #AAABB8;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px 150px;
+}
+
+.page-header__item1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
+.page-header__item2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item {
+  display: inline-block;
+  text-decoration: none;
+  color: #AAABB8;
+  padding: 5px;
+}
+
+.navigation-list__item:visited {
+  text-decoration: none;
+  color: #AAABB8;
+  padding: 5px;
+}
+
+.navigation-list__item:hover {
+  color: #e9896a;
+  text-decoration: none;
+  font-size: 120%;
+  padding: 0;
+}
+
+.navigation-list__item:focus {
+  color: #e9896a;
+  text-decoration: none;
+  font-size: 120%;
+  padding: 0;
+}
+
+.navigation-list__item--active {
+  font-size: 140%;
+  color: #f8f4e1;
+}
+
+.page-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.image-social-media {
+  margin: 5px;
+}
+
+/*
+===============
+4. Main Section
+===============
+*/
+main, section {
+  padding: 20px;
+}
+
+.grid__item {
+  display: inline-block;
+  width: 30%;
+}
+
+@supports (display: grid) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid__item {
+    background-color: #4ca894;
+    padding: 20px;
+    width: auto;
+  }
+}
+
+.profile, .about-section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-section {
+  text-align: center;
+}
+
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+=============
+5. Animations
+=============
+*/
+@-webkit-keyframes color-change {
+  0% {
+    fill: #fcffad;
+  }
+
+  50% {
+    fill: #edc655;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+@keyframes color-change {
+  0% {
+    fill: #fcffad;
+  }
+
+  50% {
+    fill: #edc655;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation-name: cloud-move;
+          animation-name: cloud-move;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  -webkit-animation-name: cloud-move-reverse;
+          animation-name: cloud-move-reverse;
+  -webkit-animation-duration: 34s;
+          animation-duration: 34s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+/*
+================
+6. Media Queries
+================
+*/
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 5px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}

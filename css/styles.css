@@ -1,0 +1,362 @@
+/*
+Content:
+1. Colors
+2. General Styles
+3. Header and Footer
+4. Main Section
+5. Animations
+6. Media Queries
+
+=========
+1. Colors
+=========
+*/
+:root {
+  --background-color-main: #f8f4e1;
+  --background-color-header-footer: #343f56;
+  --background-color-buttons: #e9896a;
+  --background-color-projects-grid: #4ca894;
+  --text-color: #272f40;
+  --text-color-header-footer: #AAABB8;
+  --text-color-nav: #AAABB8;
+  --text-color-nav-current:#f8f4e1;
+  --hover-focus-color: #e9896a;
+  --background-color-link-active: #fff;
+  --border-color: #343f56;
+}
+
+/*
+=================
+2. General Styles
+=================
+ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--background-color-main);
+  color: var(--text-color);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+a {
+  display: inline-block;
+}
+
+a:link {
+  color: inherit;
+  padding-bottom: 5px;
+}
+
+a:visited {
+  color: inherit;
+  padding-bottom: 5px;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: var(--hover-focus-color);
+  font-size: 120%;
+  padding-bottom: 0;
+}
+
+a:active {
+  text-decoration: none;
+  color: var(--hover-focus-color);
+  background-color: var(--background-color-link-active);
+}
+
+button, .button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  display: inline-block;
+  font-family: inherit;
+  font-size: 18px;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--background-color-buttons);
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid var(--border-color);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  cursor: pointer;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+input {
+  font-family: inherit;
+  border: solid 1px var(--border-color);
+  border-radius: 3px;
+}
+
+textarea {
+  font-family: inherit;
+  border: solid 1px var(--border-color);
+  border-radius: 3px;
+  min-height: 10em;
+}
+
+/*
+====================
+3. Header and Footer
+====================
+*/
+header, footer {
+  background-color: var(--background-color-header-footer);
+  color: var(--text-color-header-footer);
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px 150px;
+}
+
+.page-header__item1 {
+  flex: 0 1 200px;
+}
+
+.page-header__item2 {
+  flex: 1 1 200px;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color-nav);
+  padding: 5px;
+}
+
+.navigation-list__item:visited {
+  text-decoration: none;
+  color: var(--text-color-nav);
+  padding: 5px;
+}
+
+.navigation-list__item:hover, .navigation-list__item:focus {
+  color: var(--hover-focus-color);
+  text-decoration: none;
+  font-size: 120%;
+  padding: 0;
+}
+
+.navigation-list__item--active {
+  font-size: 140%;
+  color: var(--text-color-nav-current);
+}
+
+.page-footer {
+  /*clear: both;*/
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.image-social-media {
+  margin: 5px;
+}
+
+/*
+===============
+4. Main Section
+===============
+*/
+main, section {
+  padding: 20px;
+}
+
+.grid__item {
+  display: inline-block;
+  width: 30%;
+}
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid__item {
+    background-color: var(--background-color-projects-grid);
+    padding: 20px;
+    width: auto;
+  }
+}
+
+.profile, .about-section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-section {
+  text-align: center;
+}
+
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+=============
+5. Animations
+=============
+*/
+@keyframes color-change {
+  0% {
+    fill: #fcffad;
+  }
+
+  50% {
+    fill: #edc655;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-name: color-change;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-name: cloud-move;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation-name: cloud-move-reverse;
+  animation-duration: 34s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*
+================
+6. Media Queries
+================
+*/
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 5px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
