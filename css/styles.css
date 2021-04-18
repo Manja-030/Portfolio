@@ -217,22 +217,54 @@ main, section {
   padding: 20px;
 }
 
-.grid__item {
+/*.grid__item {
   display: inline-block;
   width: 30%;
-}
+}*/
 
 @supports (display: grid) {
-  .grid {
+
+  .portfolio-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
   }
 
   .grid__item {
     background-color: var(--background-color-projects-grid);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: auto;
+  }
+
+  .grid__item.small-square{
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .grid__item.square{
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .grid__item.large-square{
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+
+  .grid__item.tall{
+    grid-row: span 3;
+    grid-column: span 2;
+  }
+
+  .grid__item.wide{
+    grid-row: span 2;
+    grid-column: span 3;
   }
 }
 
