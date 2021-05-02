@@ -240,7 +240,7 @@ main, section {
 }
 
 .about-section {
-  text-align: center;
+  align: center;
 }
 
 .contact {
@@ -265,8 +265,15 @@ ul {
 }
 
 table {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 9%;
+  table-layout: fixed;
+  width: 25%;
+}
+table, th, td{
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+  text-align: left;
+  padding: 5px;
 }
 
 /*
