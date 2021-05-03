@@ -165,13 +165,14 @@ header, footer {
 .navigation-list li {
   display: inline-block;
   width: 10vw;
+  margin-left: 15px;
 }
 
 .navigation-list__item {
   display: inline-block;
   text-decoration: none;
   color: var(--text-color-nav);
-  padding: 8px
+  padding: 8px;
 }
 
 .navigation-list__item:visited {
