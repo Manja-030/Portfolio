@@ -79,6 +79,7 @@ a:hover, a:focus {
   text-decoration: none;
   color: var(--hover-focus-color);
   font-size: 120%;
+  transition: 0.2s ease;
   padding-bottom: 0;
 }
 
