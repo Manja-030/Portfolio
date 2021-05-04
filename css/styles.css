@@ -19,7 +19,7 @@ Content:
   --text-color: #272f40;
   --text-color-header-footer: #AAABB8;
   --text-color-nav: #AAABB8;
-  --text-color-nav-current:#f8f4e1;
+  --text-color-nav-current: #f8f4e1;
   --hover-focus-color: #e9896a;
   --background-color-link-active: #fff;
   --border-color: #343f56;
@@ -273,7 +273,8 @@ table {
   table-layout: fixed;
   width: 25%;
 }
-table, th, td{
+
+table, th, td {
   border: 1px solid var(--border-color);
   border-collapse: collapse;
   text-align: left;
