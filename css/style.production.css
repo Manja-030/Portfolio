@@ -397,11 +397,17 @@ td {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
+  .berlin-illustration{
+    max-width: 500px;
+  }
 }
 
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .berlin-illustration{
+    max-width: 400px;
   }
 }
 
