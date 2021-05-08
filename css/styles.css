@@ -143,6 +143,7 @@ header, footer {
   display: flex;
   width: 100%;
   padding: 20px 150px;
+  overflow: auto;
 }
 
 .page-header__item1 {
