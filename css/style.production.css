@@ -98,19 +98,24 @@ a:focus {
 a:active {
   text-decoration: none;
   color: #e9896a;
+  /*background-color: var(--background-color-link-active);*/
 }
 
 button {
+  /* overwrites browser defaults and resets the border */
   border: none;
+  /* takes the font from the outer container */
   display: inline-block;
   font-family: inherit;
   font-size: 18px;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #e9896a;
   color: #272f40;
   text-decoration: none;
   padding: 10px;
   margin-top: 30px;
   border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid #343f56;
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
@@ -121,16 +126,20 @@ button {
 }
 
 .button {
+  /* overwrites browser defaults and resets the border */
   border: none;
+  /* takes the font from the outer container */
   display: inline-block;
   font-family: inherit;
   font-size: 18px;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #e9896a;
   color: #272f40;
   text-decoration: none;
   padding: 10px;
   margin-top: 30px;
   border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid #343f56;
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
@@ -195,11 +204,11 @@ textarea {
 */
 header {
   background-color: #343f56;
-  color: #aaabb8;
+  color: #AAABB8;
 }
 footer {
   background-color: #343f56;
-  color: #aaabb8;
+  color: #AAABB8;
 }
 
 .page-header {
@@ -236,27 +245,27 @@ footer {
 .navigation-list__item {
   display: inline-block;
   text-decoration: none;
-  color: #aaabb8;
+  color: #AAABB8;
   padding: 8px;
 }
 
 .navigation-list__item:visited {
   text-decoration: none;
-  color: #aaabb8;
+  color: #AAABB8;
   padding: 8px;
 }
 
-.navigation-list__item:hover,
-.navigation-list__item:focus {
+.navigation-list__item:hover, .navigation-list__item:focus {
   color: #e6b09e;
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
   text-decoration: none;
+  /*font-size: 120%;*/
   padding: 8px;
 }
 
-.navigation-list__item .navigation-list__item--active {
+.navigation-list__item.navigation-list__item--active {
   font-size: 120%;
   color: #e9896a;
   -webkit-transition: 0.2s ease;
@@ -288,8 +297,7 @@ footer {
 4. Main Section
 ===============
 */
-main,
-section {
+main, section {
   padding: 20px;
 }
 
@@ -314,16 +322,13 @@ section {
   }
 }
 
-.profile {
+.profile, .about-section {
   max-width: 700px;
-  margin: 80px auto;
+  margin: 0 auto;
 }
 
 .about-section {
-  max-width: 700px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin: auto;
+  align: center;
 }
 
 .contact {
