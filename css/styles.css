@@ -17,8 +17,8 @@ Content:
   --background-color-buttons: #e9896a;
   --background-color-projects-grid: #4ca894;
   --text-color: #272f40;
-  --text-color-header-footer: #aaabb8;
-  --text-color-nav: #aaabb8;
+  --text-color-header-footer: #AAABB8;
+  --text-color-nav: #AAABB8;
   --text-color-nav-current: #f8f4e1;
   --hover-focus-color: #e9896a;
   --background-color-link-active: #fff;
@@ -75,8 +75,7 @@ a:visited {
   padding-bottom: 5px;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: none;
   color: var(--hover-focus-color);
   font-size: 120%;
@@ -89,9 +88,7 @@ a:active {
   color: var(--hover-focus-color);
 }
 
-button,
-.button {
-  /* overwrites browser defaults and resets the border */
+button, .button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -107,10 +104,7 @@ button,
   transition-property: opacity;
 }
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
+button:hover, button:focus, .button:hover, .button:focus {
   cursor: pointer;
   color: var(--text-color);
   opacity: 0.8;
@@ -140,8 +134,7 @@ textarea {
 3. Header and Footer
 ====================
 */
-header,
-footer {
+header, footer {
   background-color: var(--background-color-header-footer);
   color: var(--text-color-header-footer);
 }
@@ -184,15 +177,15 @@ footer {
   padding: 8px;
 }
 
-.navigation-list__item:hover,
-.navigation-list__item:focus {
+.navigation-list__item:hover, .navigation-list__item:focus {
   color: #e6b09e;
   transition: 0.2s ease;
   text-decoration: none;
+  /*font-size: 120%;*/
   padding: 8px;
 }
 
-.navigation-list__item .navigation-list__item--active {
+.navigation-list__item.navigation-list__item--active {
   font-size: 120%;
   color: var(--hover-focus-color);
   transition: 0.2s ease;
@@ -217,8 +210,7 @@ footer {
 4. Main Section
 ===============
 */
-main,
-section {
+main, section {
   padding: 20px;
 }
 
@@ -241,14 +233,14 @@ section {
   }
 }
 
-.profile,
-.about-section {
+.profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .about-section {
-  align-content: center;
+  max-width: 700px;
+  margin: auto;
 }
 
 .contact {
@@ -278,9 +270,7 @@ table {
   width: 25%;
 }
 
-table,
-th,
-td {
+table, th, td {
   border: 1px solid var(--border-color);
   border-collapse: collapse;
   text-align: left;

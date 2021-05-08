@@ -1,11 +1,4 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/*
 Content:
 1. Colors
 2. General Styles
@@ -25,8 +18,7 @@ Content:
 =================
  */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,14 +28,9 @@ body {
   line-height: 1.6;
   background-color: #f8f4e1;
   color: #272f40;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 h1 {
@@ -79,8 +66,6 @@ a:hover {
   text-decoration: none;
   color: #e9896a;
   font-size: 120%;
-  -webkit-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
   transition: 0.2s ease;
   padding-bottom: 0;
 }
@@ -89,8 +74,6 @@ a:focus {
   text-decoration: none;
   color: #e9896a;
   font-size: 120%;
-  -webkit-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
   transition: 0.2s ease;
   padding-bottom: 0;
 }
@@ -98,54 +81,37 @@ a:focus {
 a:active {
   text-decoration: none;
   color: #e9896a;
-  /*background-color: var(--background-color-link-active);*/
 }
 
 button {
-  /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   display: inline-block;
   font-family: inherit;
   font-size: 18px;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #e9896a;
   color: #272f40;
   text-decoration: none;
   padding: 10px;
   margin-top: 30px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid #343f56;
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
+  transition-duration: 0.2s;
   transition-property: opacity;
 }
 
 .button {
-  /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   display: inline-block;
   font-family: inherit;
   font-size: 18px;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #e9896a;
   color: #272f40;
   text-decoration: none;
   padding: 10px;
   margin-top: 30px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid #343f56;
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
+  transition-duration: 0.2s;
   transition-property: opacity;
 }
 
@@ -174,13 +140,8 @@ button:focus {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 400px;
 }
 
@@ -212,23 +173,17 @@ footer {
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px 150px;
 }
 
 .page-header__item1 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
+  flex: 1 1 200px;
   text-align: right;
 }
 
@@ -257,8 +212,6 @@ footer {
 
 .navigation-list__item:hover, .navigation-list__item:focus {
   color: #e6b09e;
-  -webkit-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
   transition: 0.2s ease;
   text-decoration: none;
   /*font-size: 120%;*/
@@ -268,19 +221,12 @@ footer {
 .navigation-list__item.navigation-list__item--active {
   font-size: 120%;
   color: #e9896a;
-  -webkit-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
 .page-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   padding: 5px;
   margin-top: auto;
@@ -308,9 +254,7 @@ main, section {
 
 @supports (display: grid) {
   .grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
@@ -322,13 +266,14 @@ main, section {
   }
 }
 
-.profile, .about-section {
+.profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .about-section {
-  align: center;
+  max-width: 700px;
+  margin: auto;
 }
 
 .contact {
@@ -384,19 +329,6 @@ td {
 5. Animations
 =============
 */
-@-webkit-keyframes color-change {
-  0% {
-    fill: #fcffad;
-  }
-
-  50% {
-    fill: #edc655;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
 @keyframes color-change {
   0% {
     fill: #fcffad;
@@ -412,90 +344,47 @@ td {
 }
 
 .sun {
-  -webkit-animation-name: color-change;
-          animation-name: color-change;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
+  animation-name: color-change;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 @keyframes cloud-move {
   from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
-  -webkit-animation-name: cloud-move;
-          animation-name: cloud-move;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
-  }
+  animation-name: cloud-move;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 @keyframes cloud-move-reverse {
   from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
 
   to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
-  -webkit-animation-name: cloud-move-reverse;
-          animation-name: cloud-move-reverse;
-  -webkit-animation-duration: 34s;
-          animation-duration: 34s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: cloud-move-reverse;
+  animation-duration: 34s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 /*
@@ -505,14 +394,12 @@ td {
 */
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
-    -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all and (max-width: 500px) {
   .grid {
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
