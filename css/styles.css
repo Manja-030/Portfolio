@@ -17,8 +17,8 @@ Content:
   --background-color-buttons: #e9896a;
   --background-color-projects-grid: #4ca894;
   --text-color: #272f40;
-  --text-color-header-footer: #aaabb8;
-  --text-color-nav: #aaabb8;
+  --text-color-header-footer: #AAABB8;
+  --text-color-nav: #AAABB8;
   --text-color-nav-current: #f8f4e1;
   --hover-focus-color: #e9896a;
   --background-color-link-active: #fff;
@@ -75,8 +75,7 @@ a:visited {
   padding-bottom: 5px;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: none;
   color: var(--hover-focus-color);
   font-size: 120%;
@@ -87,30 +86,30 @@ a:focus {
 a:active {
   text-decoration: none;
   color: var(--hover-focus-color);
+  /*background-color: var(--background-color-link-active);*/
 }
 
-button,
-.button {
+button, .button {
   /* overwrites browser defaults and resets the border */
   border: none;
+  /* takes the font from the outer container */
   display: inline-block;
   font-family: inherit;
   font-size: 18px;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--background-color-buttons);
   color: var(--text-color);
   text-decoration: none;
   padding: 10px;
   margin-top: 30px;
   border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid var(--border-color);
   transition-duration: 0.2s;
   transition-property: opacity;
 }
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
+button:hover, button:focus, .button:hover, .button:focus {
   cursor: pointer;
   color: var(--text-color);
   opacity: 0.8;
@@ -140,8 +139,7 @@ textarea {
 3. Header and Footer
 ====================
 */
-header,
-footer {
+header, footer {
   background-color: var(--background-color-header-footer);
   color: var(--text-color-header-footer);
 }
@@ -184,15 +182,15 @@ footer {
   padding: 8px;
 }
 
-.navigation-list__item:hover,
-.navigation-list__item:focus {
+.navigation-list__item:hover, .navigation-list__item:focus {
   color: #e6b09e;
   transition: 0.2s ease;
   text-decoration: none;
+  /*font-size: 120%;*/
   padding: 8px;
 }
 
-.navigation-list__item .navigation-list__item--active {
+.navigation-list__item.navigation-list__item--active {
   font-size: 120%;
   color: var(--hover-focus-color);
   transition: 0.2s ease;
@@ -217,8 +215,7 @@ footer {
 4. Main Section
 ===============
 */
-main,
-section {
+main, section {
   padding: 20px;
 }
 
@@ -241,14 +238,13 @@ section {
   }
 }
 
-.profile,
-.about-section {
+.profile, .about-section {
   max-width: 700px;
   margin: 0 auto;
 }
 
 .about-section {
-  align-content: center;
+  align: center;
 }
 
 .contact {
@@ -278,9 +274,7 @@ table {
   width: 25%;
 }
 
-table,
-th,
-td {
+table, th, td {
   border: 1px solid var(--border-color);
   border-collapse: collapse;
   text-align: left;
