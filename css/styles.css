@@ -374,6 +374,9 @@ table, th, td {
   .berlin-illustration {
     width: 95%;
   }
+  table{
+    width: 40%;
+  }
 }
 
 @media all and (max-width: 750px) {
