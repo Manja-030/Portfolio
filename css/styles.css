@@ -267,7 +267,7 @@ ul {
 
 table {
   margin-left: 9%;
-  table-layout: fixed;
+  table-layout: auto;
   width: 25%;
 }
 
